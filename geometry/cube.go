@@ -1,5 +1,5 @@
 package geometory
 
-func CubeVolume(n init) int {
+func CubeVolume(n int) int {
 	return n * n * n
 }
