@@ -1,9 +1,11 @@
 package geometory
 
+import "errors"
+
 func CubeVolume(n int) (int, error) {
 	if n != 0 {
 		return n * n * n, nil
 	}
 
-	return 0, errors.new("Zero length edge is not allowed")
+	return 0, errors.New("Zero length edge is not allowed")
 }
